@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#gameArea {
+    position: absolute;
+    top: 38%;
+    left: 70%;
+    transform: translate(-50%, -40%);
+    background-color: #2631B3;
+}
+
+#main {
+    display: flex;
+    align-content: center;
+}
+
+#panel {
+    position: absolute;
+    text-align: center;
+    left: 20%;
+}
+
+#highscore {
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#score {
+    font-size: 140px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#highScoreTxt {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#scoreTxt {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#restart {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #2631B3;
+    cursor: pointer;
+    opacity: 0.9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+#restart:hover {
+    opacity: 1;
+}
